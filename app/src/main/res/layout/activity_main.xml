@@ -26,19 +26,18 @@
 
     <ImageView
         android:id="@+id/imageView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TicTacToe"
         app:layout_constraintVertical_bias="0.412"
-        app:srcCompat="@drawable/grid"
-        tools:ignore="ImageContrastCheck" />
+        app:srcCompat="@drawable/grid" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="420dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -47,107 +46,122 @@
         app:layout_constraintTop_toTopOf="@+id/imageView">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/zero"
                 android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="0"
                 tools:ignore="ContentDescription,HardcodedText" />
 
             <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/zero2"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo1"
+                android:onClick="playerTap"
                 android:padding="20sp"
-                app:srcCompat="@drawable/zero"
-                tools:ignore="DuplicateIds"
-                android:contentDescription="@string/todo1" />
-
-            <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/zero"
-                tools:ignore="DuplicateIds"
-                android:contentDescription="@string/todo2" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/zero"
+                android:tag="1"
                 tools:ignore="DuplicateIds" />
 
             <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/zero3"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo2"
+                android:onClick="playerTap"
                 android:padding="20sp"
-                app:srcCompat="@drawable/zero"
-                tools:ignore="DuplicateIds" />
-
-            <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/zero"
+                android:tag="2"
                 tools:ignore="DuplicateIds" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/zero4"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
                 android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
                 android:padding="20sp"
-                app:srcCompat="@drawable/zero"
+                android:tag="3"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/zero5"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo1"
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="4"
                 tools:ignore="DuplicateIds" />
 
             <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/zero6"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo2"
+                android:onClick="playerTap"
                 android:padding="20sp"
-                app:srcCompat="@drawable/zero"
+                android:tag="5"
+                tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/zero7"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="6"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/zero8"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo1"
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="7"
                 tools:ignore="DuplicateIds" />
 
             <ImageView
-                android:id="@+id/zero1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/zero9"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo2"
+                android:onClick="playerTap"
                 android:padding="20sp"
-                app:srcCompat="@drawable/zero"
+                android:tag="8"
                 tools:ignore="DuplicateIds" />
         </LinearLayout>
 
